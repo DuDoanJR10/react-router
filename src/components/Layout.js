@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import CustomLink from './CustomLink';
 
-function Layout() {
+const Layout = () => {
     return (
         <div>
             <nav>
@@ -10,7 +10,7 @@ function Layout() {
                         <CustomLink to='/' >Home</CustomLink>
                     </li>
                     <li>
-                        <CustomLink to='header' >Nothing</CustomLink>
+                        <CustomLink to='header' >Header</CustomLink>
                     </li>
                     <li>
                         <CustomLink to='about' >About</CustomLink>
@@ -21,6 +21,7 @@ function Layout() {
                     
                 </ul>
             </nav>
+            
             <Outlet/>
         </div>
     )

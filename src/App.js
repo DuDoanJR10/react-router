@@ -10,10 +10,10 @@ import About from "./components/About";
 import NoResult from "./components/NoResult";
 
 const App = () => {
-
   return (
     <Router>
       <Routes>
+
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
@@ -21,6 +21,7 @@ const App = () => {
           <Route path='no/:id' element={<NoResult />} />
           <Route path="*" element={<NoResult />} />
         </Route>
+        
       </Routes>
     </Router>
   )
