@@ -10,7 +10,7 @@ const CustomLink = ({ children, to, ...props }) => {
     console.log('match: ', match);
 
     return ( 
-        <Link to={to} {...props} >{children}</Link>
+        <Link style={{ textDecoration: match ? "underline" : "none" }} to={to} {...props} >{children}</Link>
     )
 }
 
